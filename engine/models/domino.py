@@ -108,7 +108,7 @@ class DominoSet:
 
     def __sizeof__(self: Self) -> int:
         return len(self.dominoes)
-    
+
     def __len__(self: Self) -> int:
         return len(self.dominoes)
 
@@ -185,7 +185,7 @@ class TreeNode:
         Returns whether this node has a maximal number of children.
         """
         return (self.domino.is_double() and len(self.children) >= 2) or (
-            len(self.children) >= 1
+            not self.domino.is_double() and len(self.children) >= 1
         )
 
     def add_child(self: Self, child: Domino) -> None:

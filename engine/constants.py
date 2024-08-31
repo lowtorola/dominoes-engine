@@ -3,7 +3,7 @@ SIDE_MIN = 0
 
 
 # Gameplay
-MAX_ROUNDS = 10
+MAX_ROUNDS = 5
 COMMUNITY_TRAIN = "community_train"
 
 
